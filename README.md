@@ -6,7 +6,7 @@ This repository contains the code and documentation for a survival analysis proj
 ## Project Structure
 The repository is organized as follows:
 
-- `docs/`: Contains the Sphinx-generated documentation for the project.
+- `docs/`: documentation for the project.
 - `survival_analysis/`: The main package directory for the project's Python modules.
   - `__init__.py`: Initializes the package. Makes Python treat the directories as containing packages.
   - `module1.py`: Python script for a specific part of the survival analysis functionality.

@@ -1,4 +1,4 @@
-# Surv-flight
+# Survflight
 This repository is for maintaining all the code for survival analysis for flights and its documentation
 ## Overview
 This repository contains the code and documentation for a survival analysis project implemented in Python. It's designed for collaboration, with a clear structure for code, documentation, and testing.

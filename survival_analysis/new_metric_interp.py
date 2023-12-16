@@ -30,9 +30,7 @@ def new_metric_interp(df_test, non_encoded_df, df_result_test):
         with the columns as times and the rows as probabilities
  
     Returns:
-    tuple: a dictionary with metrics and list 
-        Dictionary: Calculated within percent, MAE values, infinity points
-        List[int]: Indices where the metric returns infinity
+    Dictionary: Calculated within percent, MAE values, infinity points
 
     """
     DELAY = 0

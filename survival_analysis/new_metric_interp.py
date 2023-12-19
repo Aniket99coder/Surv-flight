@@ -17,6 +17,22 @@ def estimate_time_at_probability(time_points, probabilities, target_probability)
     return interpolator(target_probability)
 
 def new_metric_interp(df_test, non_encoded_df, df_result_test):
+    """
+    Calculates the percentage of predictions that lands within an error interval. For each
+    flight observation it uses the event time with the KM curve to obtain a probability that is 
+    then is matched with the corresponding time from a df representing the survival curves for
+    each observation. Uses linear interpolation when the point is not in the df.
+ 
+    Parameters:
+    test_df (pd.DataFrame): The test data
+    non_encoded_df (pd.DataFrame): The complete data set preprocessing
+    df_result_test (pd.DataFrame): The data frame for the survival curves
+        with the columns as times and the rows as probabilities
+ 
+    Returns:
+    Dictionary: Calculated within percent, MAE values, infinity points
+
+    """
     DELAY = 0
     ERROR = 15
     within = 0
